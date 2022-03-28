@@ -5,13 +5,15 @@
 print(" ","¨¨"*28)
 conta = float(input('Qual o total gasto?\nR$:  '))
 totalpessoas = int(input('Pretende dividir a conta com quantas pessoas?\n>: '))
-totalgorjeta = int(input('Selecione, quanto de gorjeta almeja aplicar: 10, 15 ou 20:\n>: '))
+totalgorjeta = int(input('Selecione, quanto de gorjeta almeja aplicar (ex:12)\n>: '))
 
 percentual_gorjeta = totalgorjeta/100
 conta_com_gorjeta = conta * percentual_gorjeta
 totalconta = conta + conta_com_gorjeta
 valor_por_pessoa = totalconta / totalpessoas
-
 valorfinal = round(valor_por_pessoa, 2)
 
-print(f'A conta sera dividida entre 0{totalpessoas} pessoa(s), e o valor ficou: R${valorfinal}0')
+valorfinal = "{:.2f}".format(valorfinal)
+totalpessoas = "{:0>2}".format(totalpessoas)
+
+print(f'A conta sera dividida entre {totalpessoas} pessoa(s), e o valor ficou: R${valorfinal}')
