@@ -13,38 +13,38 @@ tamanho_pizza = input('(P)equena\n(M)édia\n(G)rande\n(E)stou com muita fome\
 if tamanho_pizza == 'p':
     p = 19.90
     valor_total += p
-    print(f'\nO Valor atual é de:\n{valor_total}')
+    print(f'\nO Valor atual é de: {valor_total}')
 elif tamanho_pizza == 'm':
     m = 27.90
     valor_total += m
-    print(f'\nO Valor atual é de:\n{valor_total}')
+    print(f'\nO Valor atual é de: {valor_total}')
 elif tamanho_pizza == 'g':
     g = 39.90
     valor_total += g
-    print(f'\nO Valor atual é de:\n{valor_total}')
+    print(f'\nO Valor atual é de: {valor_total}')
 elif tamanho_pizza == 'e':
     e = 79.90 
     valor_total += e
-    print(f'\nO Valor atual é de:\n{valor_total}')
+    print(f'\nO Valor atual é de: {valor_total}')
   
 
 massa = input('Você deseja a massa:\n(F)ina ou (E)ncorpada\nDigite >: ').lower()
 if massa == 'e':
     encorpada = 5.90
     valor_total += encorpada
-    print(f'\nO Valor atual é de:\n{valor_total}')
+    print(f'\nO Valor atual é de: {valor_total}')
 
 borda = input('Voce deseja a borda:\n(E)special ou (S)imples\nDigite >: ').lower()
 if borda == 'e':
     borda_especial = 9.90
     valor_total += borda_especial
-    print(f'\nO Valor atual é de:\n{valor_total}')
+    print(f'\nO Valor atual é de: {valor_total}')
     
 sabor_s = 'lista sabores'
 sabor_d = 'lista sabores'
 refri = 'lista refri'
 
-print(f'\nO Valor final é de:\n{valor_total}')
+print(f'\nO Valor final é de: {valor_total}')
 
 
 
