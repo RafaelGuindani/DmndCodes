@@ -5,7 +5,7 @@ K = C + 273.15;
 Re = C * 0.8;
 Ra = C * 1.8 + 32 + 459.67 */
 
-public class temperatura {
+public class Temperatura {
     public static void main(String[] args) {
         double C, K, Re, Ra, F;
         C = 21; /*celsius*/
@@ -20,4 +20,5 @@ public class temperatura {
         System.out.println("A temperatura em Réaumur é:" + Re);
         System.out.println("A temperatura em Rankine é:" + Ra);
 
-    }}
+    }
+}
