@@ -3,8 +3,35 @@
     // Focalizar para exibir as descrições dos atributos existentes.
     // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
-    "configurations": [ 
-
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch HelloWorld",
+            "request": "launch",
+            "mainClass": "HelloWorld",
+            "projectName": "DmndCodes_a6fffcee"
+        },
+        {
+            "type": "java",
+            "name": "Launch olamundo",
+            "request": "launch",
+            "mainClass": "olamundo",
+            "projectName": "DmndCodes_a6fffcee"
+        },
+        {
+            "type": "java",
+            "name": "Launch Simple",
+            "request": "launch",
+            "mainClass": "Simple",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": ""
+        },
         {
             "type": "ruby-debug",
             "request": "launch",
@@ -30,11 +57,11 @@
             "request": "launch",
             "name": "Rails",
             "program": "${workspaceFolder}/bin/rails",
-            "programArgs": ["s"],
+            "programArgs": [
+                "s"
+            ],
             "useBundler": true
         }
-
-
     ]
 }
 
