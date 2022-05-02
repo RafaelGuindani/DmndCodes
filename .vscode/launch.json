@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Soma",
+            "request": "launch",
+            "mainClass": "Soma",
+            "projectName": "DmndCodes_a6fffcee"
+        },
+        {
+            "type": "java",
             "name": "Launch HelloWorld",
             "request": "launch",
             "mainClass": "HelloWorld",
