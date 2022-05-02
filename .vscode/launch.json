@@ -5,41 +5,6 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "java",
-            "name": "Launch temperatura",
-            "request": "launch",
-            "mainClass": "temperatura",
-            "projectName": "DmndCodes_a6fffcee"
-        },
-        {
-            "type": "java",
-            "name": "Launch HelloWorld",
-            "request": "launch",
-            "mainClass": "HelloWorld",
-            "projectName": "DmndCodes_a6fffcee"
-        },
-        {
-            "type": "java",
-            "name": "Launch olamundo",
-            "request": "launch",
-            "mainClass": "olamundo",
-            "projectName": "DmndCodes_a6fffcee"
-        },
-        {
-            "type": "java",
-            "name": "Launch Simple",
-            "request": "launch",
-            "mainClass": "Simple",
-            "projectName": ""
-        },
-        {
-            "type": "java",
-            "name": "Launch Main",
-            "request": "launch",
-            "mainClass": "Main",
-            "projectName": ""
-        },
-        {
             "type": "ruby-debug",
             "request": "launch",
             "name": "Active File",
