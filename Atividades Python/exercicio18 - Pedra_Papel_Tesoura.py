@@ -5,7 +5,7 @@ contador_de_vitorias = 0
 contador_de_empates = 0
 contador_de_derrotas = 0
 vidas_do_computador = 7
-vidas_do_jogador = 5
+vidas_do_jogador = 3
 lista_senha = []
 
 #: Config Aparencia \\\
