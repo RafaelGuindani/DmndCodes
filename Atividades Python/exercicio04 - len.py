@@ -1,1 +1,4 @@
-user_name = print(len(input('What is your name?\n>: ')))
+user_name = input('What is your name?\n>: ')
+delimit_ = user_name.replace(" ", "")
+
+print('Your Name has',len(delimit_),'letters')
