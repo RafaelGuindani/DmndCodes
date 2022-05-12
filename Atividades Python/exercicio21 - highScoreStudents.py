@@ -20,12 +20,13 @@ print (f'The total of test scores is: {totalScore}')
 print("")
 list = 101
 for numbers in range(0, list, 3):
-    print(numbers)
+    total = numbers
 
 for numbers in range(0, list, 3):
     total = 100 - numbers
-    print(total)
-
+    print(numbers,total)
+print("")
+print("")
 totalTwo = 0
 for numbers in range(1, list):
     if numbers % 2 == 0:
