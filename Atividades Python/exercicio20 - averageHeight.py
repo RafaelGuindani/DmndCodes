@@ -10,6 +10,7 @@ numberOfStudents = 0
 
 for student in student_heights:
     numberOfStudents += 1
+print(numberOfStudents)
 
 for height in student_heights:
     totalHeight += height
