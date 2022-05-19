@@ -1,28 +1,43 @@
+from random import Random
+
+
 import random
 
-lista_palavras = ["dakota", "garfield", "milk"]
-palavra_escolhida = random.choice(lista_palavras)
-print(palavra_escolhida)
+fim_de_partida = False
+tentativas_do_usuario = 3
+lista_de_palavras = ["Dakota", "Garfield", "Milk", "Ruby"]
+palavra_selecionada = random.choice(lista_de_palavras).lower()
+quantas_letras_tem = len(palavra_selecionada)
 
-mostrar = []
-contador_de_palavras = len(palavra_escolhida)
 
-for _ in range(contador_de_palavras):
-    mostrar += "_"
+demonstrativo = []
 
-fim_de_jogo = False
-while not fim_de_jogo:
+for _ in range(quantas_letras_tem):
+    demonstrativo += "_"
 
-    escolha_uma_letra = input("Escolha uma letra:\n>: ").lower()
+while not fim_de_partida:
+    uma_letra = input("Informe uma letra:\n>: ").lower()
 
-    for posicao in range(contador_de_palavras):
-        letra = palavra_escolhida[posicao]
+    for posicao in range(quantas_letras_tem):
+        letra = palavra_selecionada[posicao]
 
-        if letra == escolha_uma_letra:
-            mostrar[posicao] = letra
+        if letra == uma_letra:
+            demonstrativo[posicao] = letra
 
-    print(mostrar)
+    if uma_letra not in palavra_selecionada:
+        tentativas_do_usuario -= 1
+        print(f"Voce perdeu uma tentativa, agora tem {tentativas_do_usuario} tentativa(s)")
 
-    if "_" not in mostrar:
-        fim_de_jogo = True
+        if tentativas_do_usuario == 0:
+
+            print("Fim de jogo")
+            print("Você Perdeu")
+
+            fim_de_partida = True
+            print(f"A palavra era: {palavra_selecionada}")
+
+    print(f"{' '.join(demonstrativo)}")
+
+    if "_" not in demonstrativo:
+        fim_de_partida = True
         print("Você Venceu")
