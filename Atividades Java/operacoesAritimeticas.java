@@ -28,6 +28,12 @@ public class operacoesAritimeticas {
         boolean bo1 = true;
         boolean bo2 = false;
 
+        a = 5;
+        b = 10;
+        return ++a + b;
+
+
+
 
 
 
