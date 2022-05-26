@@ -30,7 +30,7 @@ st = chrome.find_element (by.XPATH, start)
 st.click ()
 
 while True:
-    # Read Json
+    # Read Jsonpickle
 
     class RPA:
 
