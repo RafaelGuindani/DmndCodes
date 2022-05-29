@@ -67,8 +67,9 @@ while True:
         reaD = jsonpickle.decode (arq.read ())
 
         a = -1
-        for i in range(10):
+        while a < 9:
             a = a + 1
+
             challange = reaD [a]
             #First Name
             fN = chrome.find_element (by.XPATH, fname)
