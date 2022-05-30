@@ -1,13 +1,13 @@
 import java.util.Locale;
 import java.util.Scanner;
 
-public class exercicio_vetores {
+public class exercicioVetores {
     public static void main (String[] args){
         //***
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
         //***
-        Int N;
+        int N;
         System.out.print("Quantos numeros você vai digitar? ");
         N = sc.nextInt();
 
