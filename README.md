@@ -7,4 +7,8 @@ Este repositório é relacionado as minhas atividades, exercicios em:
 </br>
 > Ruby;
 </br>
-> Java.
+> Java;
+> </br>
+> JavaScript;
+> > </br>
+> SQL.
