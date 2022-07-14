@@ -15,7 +15,12 @@ def main():
     print('Iniciando transferencias...')
 
     tarefas = [
-        threading.Thread(target = servicos, args = (contas, total))
+        threading.Thread(target = servicos, args = (contas, total)),
+        threading.Thread (target = servicos, args = (contas, total)),
+        threading.Thread (target = servicos, args = (contas, total)),
+        threading.Thread (target = servicos, args = (contas, total)),
+        threading.Thread (target = servicos, args = (contas, total)),
+        threading.Thread (target = servicos, args = (contas, total))
     ]
 
     [tarefa.start() for tarefa in tarefas]
@@ -56,9 +61,9 @@ def validaBanco(contas: List[Conta], total: int):
     atual = sum(conta.saldo for conta in contas)
 
     if atual != total:
-        print(f'Erro: Balanço bancário inconsistente, BRL$ {atual:.2f} vs {total:.2f}', flush = True)
+        print(f'Erro: Balanço bancário inconsistente, BRL$ {atual:.2f} vs {total:.2f}\n', flush = True)
     else:
-        print(f'Tudo certo: Balanço bancario consistente: BRL$ {total:.2f}', flush = True)
+        print(f'Tudo certo: Balanço bancario consistente: BRL$ {total:.2f}\n', flush = True)
 
 
 def pegaDuasContas(contas):

@@ -26,19 +26,17 @@ def main():
 def tarefa01():
     with lock:
         a = 0
-        while a < 10_000:
-            print(f'{a}')
+        while a < 50_000_000:
+            #print(f'{a}')
             a += 1
-
 
 
 def tarefa02():
     with lock:
         b = 0
-        while b < 10_000:
-            print(f'{b}')
+        while b < 50_000_000:
+            #print(f'{b}')
             b += 1
-
 
 
 if __name__ == '__main__':
