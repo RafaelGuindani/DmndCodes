@@ -1,0 +1,23 @@
+import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+
+
+def sendMSG():
+    recipients = ['rafaelguindani@gmail.com', 'dmndcode@gmail.com']
+
+    msg = MIMEMultipart()
+    msg['Subject'] = 'Assunto do Email'
+    msg['From'] = 'dmndcode@gmail.com'
+    msg['To'] = ", ".join(recipients)
+    message = 'Corpo do Email'
+    msg.attach(MIMEText(message, 'plain'))
+
+    server = smtplib.SMTP('smtp.gmail.com', port=587)
+    server.starttls()
+    server.login('InserirEmail', 'InserirsuaSenha')
+    server.sendmail(msg['From'], recipients, msg.as_string())
+    server.quit()
+
+sendMSG()
+print('email enviado')
